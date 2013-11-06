@@ -1,0 +1,12 @@
+#Tue, 30 Jul 2013 17:36:03 +0200
+#Ant properties
+#Tue Jul 30 17:36:03 CEST 2013
+builddate=20130730 1735
+description=cmsdemo
+name=cmsdemo
+vendor=hybris
+version=5.0.2.1
+version.api=5.0.2
+
+revision=70315
+svnurl=https\://svn.hybris.de/ebusiness/tags/5.0.2.1/bin/ext-template/cmsdemo

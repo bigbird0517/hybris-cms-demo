@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testclasses>
+  <cmsdemo>
+    <testclass>com.crownpartners.cms.jalo.CmsdemoTest</testclass>
+  </cmsdemo>
+</testclasses>

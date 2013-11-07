@@ -16,7 +16,8 @@
    <extension abstractclassprefix="Generated" classprefix="Cmsdemo" managername="CmsdemoManager" managersuperclass="de.hybris.platform.jalo.extension.Extension" name="cmsdemo">
                
       <!-- you should add all required extensions to this list, except platform extensions which are automatically required -->         
-      <!-- <requires-extension name="cms"/> -->         
+      <requires-extension name="cms2" />
+      <requires-extension name="cms2lib" />         
       
 
       <coremodule generated="true" manager="com.crownpartners.cms.jalo.CmsdemoManager" packageroot="com.crownpartners.cms"/>

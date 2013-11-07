@@ -77,7 +77,7 @@
 		<extension name="classificationsystems" />
 		<extension name="classificationsystemshmc" /> -->
 		<extension name="cms2" />
-		<!-- <extension name="cms2lib" /> -->
+		<extension name="cms2lib" />
 		<extension name="cmscockpit" />
 		<!-- <extension name="importcockpit" /> -->
 		<!-- <extension name="mam" /> -->
@@ -164,7 +164,7 @@
 		<extension name="yempty" />
 		<extension name="yinstoreinitialdata" /> -->
 
-    	<extension name="cmsdemo" />			
+    	<extension dir="/Users/liweinan/cmsdemo/bin/custom/cmsdemo" />			
 		<!-- <extension name="ytelcoacceleratorcockpits" />-->
 
 												

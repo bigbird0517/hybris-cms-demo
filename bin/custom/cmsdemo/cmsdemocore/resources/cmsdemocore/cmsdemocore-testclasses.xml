@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testclasses>
+  <cmsdemocore>
+    <testclass>com.crownpartners.cmsdemo.core.suggestion.impl.DefaultSimpleSuggestionServiceTest</testclass>
+    <testclass>com.crownpartners.cmsdemo.core.suggestion.DefaultSimpleSuggestionServiceIntegrationTest</testclass>
+    <testclass>com.crownpartners.cmsdemo.core.checkout.flow.impl.PickUpInStoreCheckoutFlowStrategyTest</testclass>
+    <testclass>com.crownpartners.cmsdemo.core.batch.task.BatchIntegrationTest</testclass>
+    <testclass>com.crownpartners.cmsdemo.core.checkout.flow.impl.NewCustomerCheckoutFlowStrategyTest</testclass>
+    <testclass>com.crownpartners.cmsdemo.core.checkout.flow.impl.SiteCheckoutFlowStrategyTest</testclass>
+    <testclass>com.crownpartners.cmsdemo.core.checkout.flow.impl.FixedCheckoutFlowStrategyTest</testclass>
+    <testclass>com.crownpartners.cmsdemo.core.setup.CoreSystemSetupUnitTest</testclass>
+  </cmsdemocore>
+</testclasses>

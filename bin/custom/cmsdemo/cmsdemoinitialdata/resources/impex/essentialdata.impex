@@ -1,0 +1,44 @@
+#####################################################################################
+########################  Catalog Version ###########################################
+$contentCatalog=electronicsContentCatalog
+
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+
+$jarResourceCms=jar:com.crownpartners.cmsdemo.core.setup.CoreSystemSetup&/cmsdemocore/import/cockpits/cmscockpit
+
+
+######################################################################################
+########################   Page Template #############################################
+INSERT_UPDATE PageTemplate;$contentCV;uid[unique=true];name;active[default=true];velocityTemplate[translator=de.hybris.platform.commerceservices.impex.impl.FileLoaderValueTranslator]
+;;DefaultPageTemplate;Default Page Template;$jarResourceCms/structure-view/structure_demoPageTemplate.vm
+
+INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];name;active[default=true]
+;;DemoHeaderSlot;Header Slot
+;;DemoSidebarSlot; Sidebar Slot
+;;DemoFooterSlot;Footer
+;;DemoBodySlot;Body Slot
+
+INSERT_UPDATE ContentSlotForTemplate;$contentCV[unique=true];uid[unique=true];position[unique=true];pageTemplate(uid,$contentCV)[unique=true];contentSlot(uid,$contentCV)[unique=true];allowOverwrite
+;;DemoHeaderSlot;	Header;		DefaultPageTemplate;	DemoHeaderSlot;true
+;;DemoSidebarSlot;	Sidebar;	DefaultPageTemplate;	DemoSidebarSlot;true
+;;DemoFooterSlot;	Footer;		DefaultPageTemplate;	DemoFooterSlot;true
+;;DemoBodySlot;		Body;		DefaultPageTemplate;	DemoBodySlot;true
+#####################################################################################
+
+
+
+##########################################################################################
+############################ Pages #######################################################
+INSERT_UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];name;masterTemplate(uid,$contentCV);label;title;defaultPage
+  #uid			#name			#masterTemplate			#label		#title      #defaultPage
+;;DemoPage;		Demo Page;		DefaultPageTemplate;	demopage;	Demo Page;  true
+
+
+INSERT_UPDATE ContentSlotForPage;$contentCV[unique=true];uid[unique=true];position[unique=true];page(uid,$contentCV)[unique=true];contentSlot(uid,$contentCV)[unique=true]
+  #uid				#position	#page 		#contentSlot
+;;DemoHeader;		Header;		DemoPage;	DemoHeaderSlot;
+;;DemoSidebar;		Sidebar;	DemoPage;	DemoSidebarSlot;
+;;DemoFooter;		Footer;		DemoPage;	DemoFooterSlot;
+;;DemoBody;			Body;		DemoPage;	DemoBodySlot;
+
+##########################################################################################

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testclasses>
+  <cmsdemofacades>
+    <testclass>com.crownpartners.cmsdemo.facades.flow.impl.DefaultCheckoutFlowFacadeTest</testclass>
+    <testclass>com.crownpartners.cmsdemo.facades.suggestion.DefaultSimpleSuggestionFacadeIntegrationTest</testclass>
+    <testclass>com.crownpartners.cmsdemo.facades.suggestion.impl.DefaultSimpleSuggestionFacadeTest</testclass>
+    <testclass>com.crownpartners.cmsdemo.facades.flow.impl.DefaultMobileCheckoutFlowFacadeTest</testclass>
+  </cmsdemofacades>
+</testclasses>
